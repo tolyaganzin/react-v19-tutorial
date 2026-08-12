@@ -1,0 +1,56 @@
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# production
+/dist
+/build
+
+# misc
+.DS_Store
+/.env
+/.env.local
+/.env.*.local
+
+# local env files
+.vscode/
+.idea/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# testing
+/coverage
+
+# Vite
+/.vite
+
+# React Native
+.expo/
+
+# Editor directories and files
+*.sublime-workspace
+*.sublime-project
+*.vscode
+
+# Mac
+.AppleDouble
+.LSOverride
+
+# IntelliJ
+*.iml
+*.ipr
+*.iws
+out/
+
+# Build output
+/build
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
