@@ -14,16 +14,19 @@ const MySubmitForm = () => {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
-      <label>Enter your name:
-        <input
-          type="text" 
-          value={name}
-          onChange={handleChange}
-        />
-      </label>
-      <input type="submit" />
-    </form>
+    <>
+      <h3>My Submit Form Component</h3>
+      <form onSubmit={handleSubmit}>
+        <label>Enter your name:
+          <input
+            type="text" 
+            value={name}
+            onChange={handleChange}
+          />
+        </label>
+        <input type="submit" />
+      </form>
+    </>
   )
 }
 

@@ -9,16 +9,19 @@ const MyForm = () => {
   }
 
   return (
-    <form>
-      <label>Enter your name:
-        <textarea
-          type="text" 
-          value={name}
-          onChange={handleChange}
-        />
-      </label>
-      <pre>Current value: {name}</pre>
-    </form>
+    <>
+      <h3>My Form Component</h3>
+      <form>
+        <label>Enter your name:
+          <textarea
+            type="text" 
+            value={name}
+            onChange={handleChange}
+          />
+        </label>
+        <pre>Current value: {name}</pre>
+      </form>
+    </>
   )
 }
 
