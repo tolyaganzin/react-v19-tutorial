@@ -29,5 +29,3 @@ createRoot(document.getElementById('root')).render(
   </StrictMode>
 )
 
-// Ensure this module has an export so fast refresh works properly in dev
-export {};
