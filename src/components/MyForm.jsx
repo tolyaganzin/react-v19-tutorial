@@ -11,13 +11,13 @@ const MyForm = () => {
   return (
     <form>
       <label>Enter your name:
-        <input
+        <textarea
           type="text" 
           value={name}
           onChange={handleChange}
         />
       </label>
-      <p>Current value: {name}</p>
+      <pre>Current value: {name}</pre>
     </form>
   )
 }
