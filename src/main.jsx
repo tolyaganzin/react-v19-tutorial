@@ -6,6 +6,7 @@ import MyCars from './components/MyCars.jsx';
 import MyForm from './components/MyForm.jsx';
 import MySubmitForm from './components/MySubmitForm.jsx';
 import MyMultiInputsForm from './components/MyMultyInputsForm.jsx';
+import MyCheckboxForm from './components/MyCheckboxForm.jsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -14,5 +15,6 @@ createRoot(document.getElementById('root')).render(
     <MyForm />
     <MySubmitForm />
     <MyMultiInputsForm />
-  </StrictMode>,
+    <MyCheckboxForm />
+  </StrictMode>
 )
