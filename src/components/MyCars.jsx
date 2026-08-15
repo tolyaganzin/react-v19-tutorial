@@ -1,4 +1,4 @@
-function MyCars() {
+const MyCars = () => {
   const cars = ['Ford', 'BMW', 'Audi'];
   return (
     <>
