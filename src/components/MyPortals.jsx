@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { createPortal } from 'react-dom';
-import styles from './../styles/my-portals.module.css'
+import sModal from './../styles/my-portals.module.css';
+import sButtons from './../styles/buttons.module.css';
+import './../styles/header-global.module.css';
 
 // Portals are particularly useful for:
 // Modals and dialogs
@@ -16,13 +18,11 @@ const Modal = ({ isOpen, onClose, children }) =>  { // Modal component that uses
     borderRadius: '8px'
   };
 
-  console.log(styles.backdrop);
-
   return createPortal(
-    <div className={styles.backdrop}>
+    <div className={sModal.backdrop}>
       <div style={modalStyle}>
         {children}
-        <button onClick={onClose}>Close</button>
+        <button className={sButtons.secondary} onClick={onClose}>Close</button>
       </div>
     </div>,
     document.body
@@ -35,12 +35,12 @@ const MyPortals = () => {
   return (
     <>
       <h3 style={{backgroundColor: "lightblue"}}>My Portals Component</h3>
-      <button onClick={() => setIsOpen(true)}>
+      <button className={sButtons.primary} onClick={() => setIsOpen(true)}>
         Open Modal
       </button>
 
       <Modal isOpen={isOpen} onClose={() => setIsOpen(false)}>
-        <h2>Modal Content</h2>
+        <h2 className="myheader">Modal Content</h2>
         <p>This content is rendered outside the App component!</p>
       </Modal>
     </>
